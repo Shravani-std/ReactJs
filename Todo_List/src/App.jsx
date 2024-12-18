@@ -32,7 +32,9 @@ function App() {
 
   const toggleComplete = (id) => {
     setTodos((prev) =>
-       prev.map((prevTodo) => prevTodo.id === id ? {...prevTodo, completed: !prevTodo.completed} : prevTodo))
+       prev.map((prevTodo) =>
+         prevTodo.id === id ?
+     {...prevTodo, completed: !prevTodo.completed} : prevTodo))
   }
   // After refreshing or after closing site open again we should have previous todo list thats why we could use useEffect method
   useEffect(() =>{
