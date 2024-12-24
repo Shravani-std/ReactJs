@@ -9,7 +9,7 @@ const Input =  React.forwardRef( function Input({
     ...props
 
 }, ref){
-
+    // The forwardref mechanism allows a parent component to get direct access to the HTML element. Inside a child component.
     const id = useId()
     
     return (

@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom'
 
 
 
-export default function Protected({childre, authentication = true})
+export default function Protected({children, authentication = true})
 {
 
 
