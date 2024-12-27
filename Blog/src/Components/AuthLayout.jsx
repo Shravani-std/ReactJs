@@ -22,17 +22,13 @@ export default function Protected({children, authentication = true})
         
         //let authValue = authStatus === true ? true : false
 
-
-        if (authentication  && authStatus !== authentication) {
+        if(authentication && authStatus !== authentication){
             navigate("/login")
-            
-        }
-        else if (!authentication && authStatus !== authentication) {
+        } else if(!authentication && authStatus !== authentication){
             navigate("/")
         }
         setLoader(false)
-   },[navigate, authStatus, authentication])
-   
-   return loader ? <h1>Loading...</h1> : <>{children}</>
+    }, [authStatus, navigate, authentication])
 
+  return loader ? <h1>Loading...</h1> : <>{children}</>
 }

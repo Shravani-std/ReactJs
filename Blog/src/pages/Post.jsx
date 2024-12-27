@@ -1,7 +1,9 @@
-import React, { useEffect, useState } from 'react'
-import { useNavigate, useParams } from 'react-router-dom';
-import { useSelector} from "react-redux"
+import React, { useEffect, useState } from 'react';
+import { Link, useNavigate, useParams } from 'react-router-dom';
+import { useSelector} from "react-redux";
 import Service from "../appwrite/conf";
+import { Button, Container } from '../Components';
+import parse from "html-react-parser";
 
 function Post() {
 

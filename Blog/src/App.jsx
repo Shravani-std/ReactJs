@@ -19,7 +19,7 @@ function App() {
         dispatch( login({userData}) )
       }
       else{
-        dispatch( logout({userData}))
+        dispatch( logout() )
       }
     })
 
